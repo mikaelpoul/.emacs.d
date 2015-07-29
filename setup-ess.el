@@ -1,5 +1,9 @@
 ;; Thanks to griverorz (https://github.com/griverorz/emacsd)
 
+;; Load ESS
+(add-to-list 'load-path "~/.emacs.d/ESS/lisp")
+(load "ess-site")
+
 ;; Do not load data or save envir
 (setq inferior-R-args "--no-restore-history --no-restore-data --no-save ")
 

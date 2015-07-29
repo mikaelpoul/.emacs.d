@@ -9,6 +9,6 @@
 	url = https://github.com/capitaomorte/yasnippet
 
 # monokai theme submodule
-[submodule "monokai-theme"]
-	path = themes/monokai-theme
+[submodule "monokai-emacs"]
+	path = themes/monokai-emacs
 	url = https://github.com/oneKelvinSmith/monokai-emacs

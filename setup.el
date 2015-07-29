@@ -1,6 +1,10 @@
 ;; Main emacs setup
 ;; Mikael Poul Johannesson
 
+;; Adds the monokai theme to the custom theme load path (set the theme using Custom Theme feature)
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/monokai-emacs")
+
+
 ;; Load package repositories
 (require 'package)
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")

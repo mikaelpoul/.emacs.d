@@ -21,6 +21,9 @@
 # ignore ido.last
 ido.last
 
+# ignore elpa
+elpa/
+
 # don't ignore the .gitignore and .gitmodules file
 !.gitignore
 !.gitmodules

@@ -2,25 +2,83 @@
 
 ;; ----- ido-last-directory-list -----
 (
- ("/home/mikaelpoul/" . ".emacs.d/")
+ ("/home/mikaelpoul/Dropbox/projects/predict/" . "R/")
+ ("/home/mikaelpoul/Dropbox/projects/medborgerpanelet/core-module-report/" . "R/")
+ ("/home/mikaelpoul/Dropbox/projects/medborgerpanelet/communication/" . "R/")
+ ("/home/mikaelpoul/Dropbox/projects/medborgerpanelet/reports/" . "R/")
+ ("/home/mikaelpoul/Dropbox/projects/medborgerpanelet/" . "core-module-report/")
+ ("/home/mikaelpoul/Dropbox/projects/equality/" . "R/")
+ ("/home/mikaelpoul/Dropbox/projects/" . "predict/")
+ ("/home/mikaelpoul/Dropbox/" . "projects/")
+ ("/home/mikaelpoul/" . "Dropbox/")
+ ("/home/" . "mikaelpoul/")
+ ("/" . "home/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/home/mikaelpoul/.emacs.d/"
+ "/home/mikaelpoul/"
+ "/home/mikaelpoul/Dropbox/projects/predict/R/"
+ "/home/mikaelpoul/Dropbox/projects/medborgerpanelet/core-module-report/R/"
+ "/home/mikaelpoul/Dropbox/projects/medborgerpanelet/core-module-report/manuscript/"
+ "/home/mikaelpoul/Dropbox/projects/medborgerpanelet/reports/manuscript/"
+ "/home/mikaelpoul/Dropbox/projects/medborgerpanelet/reports/documents/"
+ "/home/mikaelpoul/Dropbox/projects/medborgerpanelet/reports/R/"
+ "/home/mikaelpoul/Dropbox/projects/medborgerpanelet/communication/R/"
+ "/home/mikaelpoul/Dropbox/projects/equality/R/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- ".gitignore"
- "README.md"
+ ".emacs"
+ "oldemacs"
+ "1a-preparation-nmp-subset.R"
+ "1b-preparation-nmp-recode.R"
+ "1d-preparation-nmp-mi.R"
+ "1b-preparation-nmp.R"
+ "1-preparation-nmp.R"
+ "1-data-preparation-predict.R"
+ "4-data-preparation-sample-visualization.R"
+ "6-data-visualization-misc"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/mikaelpoul/.emacs.d/" (21944 42121 916531 991000) "setup.el" ".git/" "setup-latex.el" "plugins/" "ESS/" "themes/" "setup-ess.el" "setup-ess.el~" "setup-latex.el~" "README.md" "auto-save-list/" "setup.el~" "../" "./" "installations and updates" "ido.last")
+ ("/home/mikaelpoul/" (21944 43582 133874 720000) ".byobu/" ".emacs~" "R/" "test.R~" ".viminfo" "#test.R#" ".cache/" "./" ".ICEauthority" ".mozilla/" ".dmrc" ".nv/" "Documents/" "Dropbox/" ".Skype/" "Downloads/" "mendeleydesktop-latest" ".dropbox-dist/" ".dbus/" "gnome-terminal-colors-monokai/" ".xsession-errors" ".config/" "test.R" ".gitconfig" "Desktop/" "Music/" "oldemacs" ".emacs" ".gnome/" "makefile" ".emacs.d/" "Pictures/" "Watch on laptop/" "Public/" ".Xauthority" "../" ".i3/" ".compiz/" ".profile" ".local/" "examples.desktop" "Templates/" ".thunderbird/" ".swp" ".dropbox/" ".gconf/" ".sudo_as_admin_successful" ".xsession-errors.old" ".bash_history" ".pki/" "Videos/" ".gnupg/" ".bash_logout" ".bashrc")
 
- ("/home/mikaelpoul/" (21944 41803 86632 949000) ".bash_logout" ".Xauthority" "Music/" ".dmrc" ".mozilla/" ".bashrc" ".gitconfig" ".ICEauthority" "Public/" ".xsession-errors" ".dropbox-dist/" ".config/" "Downloads/" "Pictures/" "Documents/" ".bash_history" ".sudo_as_admin_successful" ".emacs~" ".emacs" "../" ".local/" ".gnome/" ".gvfs/" "./" "Dropbox/" ".dbus/" ".pki/" ".emacs.d/" ".subversion/" "Videos/" ".cache/" "examples.desktop" "Desktop/" ".xsession-errors.old" ".gconf/" ".dropbox/" ".profile" ".compiz/" "Templates/")
+ ("/home/mikaelpoul/Dropbox/projects/predict/R/" (21926 23509 146065 751000) "input/" "1c-preparation-nmp-setup.R" "test.R~" "#test.R#" "1c-preparation-nmp-setup.R~" "./" "1c-preparation-nmp-mi.R~" "2-analysis-mlmodels.R~" "output/" "test.R" "1a-preparation-nmp-subset.R" ".#test.R" ".#test2.R" "2-analysis-mlmodels.R" "1b-preparation-nmp-recode.R" ".#-emacsa07212" "1b-preparation-nmp-recode.R~" "1d-preparation-nmp-mi.R" "#test2.R#" "../" "1a-preparation-nmp-subset.R~" "test2.R" "1d-preparation-nmp-mi.R~")
+
+ ("/home/mikaelpoul/Dropbox/projects/predict/" (21926 9831 485273 839000) "R/" "README.md" "./" "README.md~" "LICENSE~" "../" "LICENSE" ".git/")
+
+ ("/home/mikaelpoul/Dropbox/" (21921 21786 457008 967000) "documentation/" "document.synctex.gz" "Prosjektplan-bachelor.docx" "./" "document.aux" "BengaliStemmer/" "misc/" "SAMPOL350_Master_Thesis_Submitted.pdf" "325-Globalization.jpg" "Susann/" "test/" ".dropbox.cache/" "Skjermbilder/" "Screenshot from 2015-01-01 14:15:40 (copy).png" "7864647044_5255fbe533_o.png" "ncp-core-module-report-presentation-2.pdf" "print/" "document.tex" "stem_bn.exe" "prosessveiledning 24.03.docx" "Psychological Science-2011-Simmons-1359-66.pdf" "document.pdf" "backup/" "Nettverkspassord.txt" "Eichengreensammendrag.docx" "Norsk medborgerpanel/" "masterstipendsøknader-2015-kommentarer.docx" "Psykologilitteratur.txt" "Public/" "Screenshot from 2015-01-01 12:07:38 (copy).png" "HIM102Irak.docx" "mikaelpouljohannesson-portrettbilde.png" "../" "document.log" "Manuscript, The Populist Radical Right in Western Europe, Ivarsflaten.pdf" "Manuscript, Populists in power, Ivarsflaten.pdf" ".dropbox" "prosessveiledning 21.05.docx" "1-s2.0-S0191886908004479-main.pdf" "projects/" "Political Analysis-2015-Lucas-254-77.pdf" "nmp-rapport-om-kjernemodulen-utkast.pdf")
+
+ ("/home/mikaelpoul/Dropbox/projects/equality/R/" (21916 13844 525472 383000) "1-data-preparation-wvs.R" "input/" "2a-data-preparation-wdi.R~" ".gitignore" "2a-data-preparation-wdi.R" "./" "2b-data-preparation-polity.R" "2-data-preparation-wdi.R~" "1-data-preparation-wvs-test.R" "output/" ".Rproj.user/" "2c-data-preparation-fh.R" "4-analysis-preliminary.R~" "#4-analysis-preliminary.R#" "1-data-preparation-wvs-test.R~" "1-data-preparation-wvs - Copy.R" ".Rhistory" "2-data-preparation-polity.R~" "4-analysis-preliminary-2.R" "2b-data-preparation-polity.R~" "2-data-preparation-fh.R~" ".#4-analysis-preliminary (Stationarys kopi som er i konflikt 2015-07-07).R" "../" "2c-data-preparation-fh.R~" "4-analysis-preliminary.R" ".RData" ".git/" "4-analysis-preliminary-2.R~" "3-data-preparation-final.R")
+
+ ("/home/mikaelpoul/Dropbox/projects/medborgerpanelet/communication/R/" (21916 13841 134201 106000) "1-data-preparation-variable-overview.R" "input/" "test.wmf" "gbm-4.pdf" "gbm-9.png" "exp1.pdf" "highcharts3.txt" "exp2.wmf" "gbm-3.pdf" "exp1pie.png" "./" "gbm-2.pdf" "1-data-preparation-medborgerpanelet.R" "gbm-6.pdf" "gbm-4.png" "til-sveinung.R~" "til-sveinung.R" "ddds" "para1.png" "1-data-preparation-medborgerpanelet.R~" "22juli.R" "satisfaction-democracy.R" "til-sveinung/" "texts.csv" "gbm-1.pdf" "test.pdf" "exp1.svg" "2-data-analysis-satisfaction.R~" "5-data-analysis-vote-prediction.R~" "til-elisabeth/" "gbm-9.pdf" "output/" "2-data-analysis-satisfaction.R" "gbm-7.png" "test.png" "gbm-8.pdf" "gbm-1.png" "gbm-6.png" "gbm-5.png" ".Rhistory" "para2.png" "exp2.svg" "gbm-8.png" "22juli.R~" "exp1.png" "exp2.pdf" "7-data-preparation-elisabeth.R~" "gbm-2.png" "gbm-3.png" "4-data-analysis-scale-party.R" "6-data-preparation-mrp-climate.r~" "4-data-analysis-scale-party.R~" "highcharts2.txt" "6-data-preparation-mrp-climate.r" "exp2.png" "8-data-preparation-parties.R" "../" "8-data-preparation-parties.R~" "variable-overview-u3.R" "gbm-5.pdf" "exp2pie.png" "3-data-analysis-like-party.R~" "satisfaction-democracy.R~" "Variables.txt" "highcharts1.txt" "exp1.wmf" "5-data-analysis-vote-prediction.R" "#ddds#" "3-data-analysis-like-party.R" "7-data-preparation-elisabeth.R" "gbm-7.pdf")
+
+ ("/home/mikaelpoul/Dropbox/projects/medborgerpanelet/core-module-report/R/" (21917 31230 728043 672000) "input/" "./" "frp-velgere.R" ".#frp-velgere.R" "test.pdf" "#4-data-preparation-sample-visualization.R#" "#frp-velgere.R#" "1-data-preparation-generate-variable-list.R~" "output/" "3-data-preparation-trees.R" "2-data-preparation-import-variables.R~" "4-data-preparation-sample-visualization.R" "frp-velgere.R~" "5-data-visualization-variable-overview.R" "7-data-preparation-trees-2.R" "2-data-preparation-import-variables.R" ".Rhistory" "6-data-visualization-misc" "5-data-visualization-variable-overview.R~" "4-data-preparation-sample-visualization.R~" "1-data-preparation-generate-variable-list.R" "3-data-preparation-trees.R~" "6-data-visualization-misc~" "7-data-preparation-trees-2.R~" "../" "6-data-visualization-misc.R" "6-data-visualization-misc.R~" "#6-data-visualization-misc.R#")
+
+ ("/home/mikaelpoul/Dropbox/projects/" (21918 3667 997142 757000) "equality/" "ivarsflaten/" "./" "predict/" "sc/" "navtext/" "enlightment/" "medborgerpanelet/" "future/" "ernaring/" "inequality/" "mikaelpoul.github.io/" "../" "sample-analyzer/" "workspace/" "testbench/")
+
+ ("/home/mikaelpoul/Dropbox/projects/medborgerpanelet/core-module-report/manuscript/" (21916 14479 38001 418000) "gammel om forvaltning.txt" "testtree.tex" "tufte.bst" "#ncp-core-module-report-3.tex#" "nmp-logo.png" "title.log" "title.synctex.gz" "title.pdf" "./" "nmp-timeline.pdf" "test.synctex.gz" "tufte-common.def" "title.tex" "test.pdf" "ncp-core-module-report-presentation-2.toc" "11-dist-like-party-krf.pdf" "ncp-core-module-report-presentation-2.out" "ncp-core-module-report-3.toc" "sample.pdf" "ncp-core-module-report-3.synctex.gz" "ncp-core-module-report-presentation-2.tex" "ncp-core-module-report-presentation-2.pdf" "ncp-core-module-report-presentation.pdf" "test2.pdf" ".txsprofile" "ncp-core-module-report-presentation-2.nav" "ncp-core-module-report-3.pdf" "ncp-core-module-report-3.log" "ncp-core-module-report-3.out" "ncp-core-module-report-presentation.nav" "ncp-core-module-report-presentation-notes.synctex.gz" "ncp-core-module-report-3.tex~" "ncp-core-module-report-presentation-2.log" "ncp-core-module-report-presentation.snm" "tufte/" "backup/" "test.aux" "ncp-core-module-report-presentation.aux" "ncp-core-module-report-presentation.synctex.gz" "ncp-core-module-report-presentation.toc" "test.tex" "../" "ncp-core-module-report-presentation.out" "ncp-core-module-report-3.aux" "[.aux" "ncp-core-module-report-presentation-2.aux" "figures/" "ncp-core-module-report-presentation-2.snm" "nmp-logo.eps" "nmp-logo.pdf" "test.log" "timeline/" "tufte-common-backup.tex" "ncp-core-module-report-presentation.tex" "ncp-core-module-report-presentation-notes.tex" "title.aux" "ncp-core-module-report-presentation.log" "tufte-handout.cls" "ncp-core-module-report-3.tex" "ncp-core-module-report-presentation-notes.log" "ncp-core-module-report-presentation-2.synctex.gz" "tufte-book.cls" "ncp-core-module-report-presentation-notes.pdf" "sample2.pdf" "trees/" "ncp-core-module-report-3.lof")
+
+ ("/home/mikaelpoul/Dropbox/projects/medborgerpanelet/core-module-report/" (21890 47128 306489 409000) "hive.pdf" "R/" "README.md" "./" "Medborgerrapport 1.pdf" "test.pdf" "sample.pdf" "test.txt" "presentation.pdf" "manuscript/" "tanker.docx" "../" "LICENSE" "notes.pdf" ".git/" "testbench/")
+
+ ("/home/mikaelpoul/Dropbox/projects/medborgerpanelet/" (21916 13743 917176 98000) "./" "reports/" "core-module-report/" "research-portal/" "what-to-expect/" "python/" "communication/" "sample-analysis/" "../" "coordination/" "lokalvalget-2015/" "documentation-software/" "masterstipend-2015/")
+
+ ("/home/mikaelpoul/Dropbox/projects/medborgerpanelet/reports/R/" (21852 19121 941300 852000) "./" "../" "*R*~" "*R*")
+
+ ("/home/mikaelpoul/Dropbox/projects/medborgerpanelet/reports/" (21852 19124 73323 837000) "R/" "./" "../")
+
+ ("/home/mikaelpoul/Dropbox/projects/medborgerpanelet/reports/manuscript/" (21851 34026 157814 225000) "ncp-core-module-report.tex" "ncp-core-module-report.toc" "./" "ncp-core-module-report.out" "ncp-core-module-report.aux" "ncp-core-module-report.log" "../" "ncp-core-module-report.tex~" "ncp-core-module-report.pdf")
+
+ ("/home/mikaelpoul/Dropbox/projects/medborgerpanelet/reports/documents/" (21849 62521 215784 406000) "ncp-core-module-report.tex" "ncp-core-module-report.toc" "./" "ncp-core-module-report.out" "ncp-core-module-report.aux" "ncp-core-module-report.log" "../" "ncp-core-module-report.tex~" "ncp-core-module-report.pdf")
+
+ ("/home/mikaelpoul/Dropbox/projects/medborgerpanelet/communication/" (21845 50478 725699 338000) "R/" "Medborgerformidling.pdf" "./" ".Rhistory" "../" "Tableau/" "docs/" "Medborgerformidling.Rmd" "Book2.xlsx")
+
+ ("/home/mikaelpoul/Dropbox/projects/equality/" (21845 50404 282314 763000) "R/" "README.md" "./" "README.md~" ".Rproj.user/" "../" "docs/" ".git/")
+
+ ("/home/" (21845 49230 362454 396000) "./" "mikaelpoul/" "../")
 )
 
 ;; ----- ido-unc-hosts-cache -----

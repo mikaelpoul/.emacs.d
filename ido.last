@@ -1,0 +1,26 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/mikaelpoul/" . ".emacs.d/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/mikaelpoul/.emacs.d/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "README.md"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/mikaelpoul/.emacs.d/" (21944 41793 86461 208000) "setup.el" "setup-latex.el" "plugins/" "ESS/" "themes/" "setup-ess.el" "setup-ess.el~" "setup-latex.el~" "auto-save-list/" "setup.el~" "../" "./" "installations and updates")
+
+ ("/home/mikaelpoul/" (21944 41803 86632 949000) ".bash_logout" ".Xauthority" "Music/" ".dmrc" ".mozilla/" ".bashrc" ".gitconfig" ".ICEauthority" "Public/" ".xsession-errors" ".dropbox-dist/" ".config/" "Downloads/" "Pictures/" "Documents/" ".bash_history" ".sudo_as_admin_successful" ".emacs~" ".emacs" "../" ".local/" ".gnome/" ".gvfs/" "./" "Dropbox/" ".dbus/" ".pki/" ".emacs.d/" ".subversion/" "Videos/" ".cache/" "examples.desktop" "Desktop/" ".xsession-errors.old" ".gconf/" ".dropbox/" ".profile" ".compiz/" "Templates/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

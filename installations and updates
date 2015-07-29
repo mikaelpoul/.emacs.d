@@ -1,0 +1,14 @@
+### YASNIPPET
+
+Install the most recent version
+
+Clone this repository somewhere
+
+$ cd ~/.emacs.d/plugins
+$ git clone --recursive https://github.com/capitaomorte/yasnippet
+Add the following in your .emacs file:
+
+(add-to-list 'load-path
+              "~/.emacs.d/plugins/yasnippet")
+(require 'yasnippet)
+(yas-global-mode 1)

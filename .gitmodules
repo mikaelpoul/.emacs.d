@@ -1,0 +1,14 @@
+# ESS submodule
+[submodule "ESS"]
+	path = ESS
+	url = https://github.com/emacs-ess/ESS
+
+# yasnippet submodule
+[submodule "yasnippet"]
+	path = plugins/yasnippet
+	url = https://github.com/capitaomorte/yasnippet
+
+# monokai theme submodule
+[submodule "monokai-emacs"]
+	path = themes/monokai-emacs
+	url = https://github.com/oneKelvinSmith/monokai-emacs

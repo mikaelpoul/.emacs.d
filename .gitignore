@@ -18,6 +18,9 @@
 # ignore prelim files
 *prelim
 
+# ignore ido.last
+ido.last
+
 # don't ignore the .gitignore and .gitmodules file
 !.gitignore
 !.gitmodules

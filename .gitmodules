@@ -38,3 +38,7 @@
 	path = plugins/undo-tree
 	url = http://www.dr-qubit.org/git/undo-tree.git
 
+## Polymode
+[submodule "polymode"]
+	path = plugins/polymode
+	url = https://github.com/vitoshka/polymode.git

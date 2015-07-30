@@ -19,10 +19,12 @@ in the `.emacs`-file.
 - Install `magit` using package-install: `M-x package-install RET magit RET`
 
 *magit keybindings*
-`C-x g` *magit-status*
-`s` *stage* files, `u` unstage files
-`c c` to *commit* -> type message -> `C-c C-c` to finish
-`b b` to switch branch
-`P P` (in capital letters) to *git push*
-`F F` (in capital letters) to *git pull*
+- `C-x g` *magit-status*
+- `s` *stage* files, `u` unstage files (`S` and `U` to stage/unstage all hunks)
+- `c c` to *commit* -> type message -> `C-c C-c` to finish
+- `b b` to switch branch
+- `P P` (in capital letters) to *git push*
+- `F F` (in capital letters) to *git pull*
 
+*polymode*
+`M-n r` in polymode-r mode to use rmarkdown (`render()`). Thanks to @r2evans and @malcook!

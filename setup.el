@@ -105,3 +105,6 @@
       ))
     ))
 (define-key polymode-mode-map [(meta n) (r)] 'rmarkdown-render)
+
+;; Do not show welcome screen
+(setq inhibit-startup-message t)

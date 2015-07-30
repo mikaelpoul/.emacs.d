@@ -9,4 +9,5 @@ I use `.el`-files placed in the `.emacs.d`-folder for any emacs configuration or
 
 in the `.emacs`-file.
 
-Install `auctex` using package-install: `M-x package-list-packages RET`, locate auctex, and install.
+Other notes-to-self:
+- Install `auctex` using package-install: `M-x package-list-packages RET`, locate `auctex`, and install.

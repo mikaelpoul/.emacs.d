@@ -102,6 +102,6 @@
      (message
       "Rscript -e \"withCallingHandlers({library(rmarkdown); library(pander); %s}, error = function(e) print(sys.calls()))\""
       render-command
-      ))&
+      ))
     ))
 (define-key polymode-mode-map [(meta n) (r)] 'rmarkdown-render)

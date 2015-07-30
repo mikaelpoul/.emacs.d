@@ -15,7 +15,7 @@ in the `.emacs`-file.
 - Install `auctex` using package-install: `M-x package-list-packages RET`, locate `auctex`, and install (`package-list-packages` updates the package list).
 - Install `projectile` using package-install: `M-x package-install RET projectile`
 - Install `auto-complete` using package-install: `M-x package-install RET auto-complete RET`
-- Install `latex-preview-pane` using package-install: `M-x package-install latex-preview-pane`
+- Install `latex-preview-pane` using package-install: `M-x package-install RET latex-preview-pane RET`
 - Install `magit` using package-install: `M-x package-install RET magit RET`
 
 *magit keybindings*
@@ -27,4 +27,5 @@ in the `.emacs`-file.
 - `F F` (in capital letters) to *git pull*
 
 *polymode*
-`M-n r` in polymode-r mode to use rmarkdown (`render()`). Thanks to @r2evans and @malcook!
+- `M-n r` in polymode-r mode to use the new *rmarkdown* (`render()`). Thanks to @r2evans and @malcook. 
+- `M-n w` to *weave* (capital W to choose weaver), and `M-n e` to *export* (capital E to choose exporter)

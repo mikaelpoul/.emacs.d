@@ -12,3 +12,8 @@
 [submodule "monokai-emacs"]
 	path = themes/monokai-emacs
 	url = https://github.com/oneKelvinSmith/monokai-emacs
+
+# markdown mode submodule
+[submodule "markdown-mode"]
+	path = plugins/markdown-mode
+	url = git://jblevins.org/git/markdown-mode.git

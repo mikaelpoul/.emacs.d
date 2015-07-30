@@ -60,8 +60,9 @@
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 ;; Wind mode (shift+arrow key to shift move between buffers)
-(when (fboundp 'windmove-default-keybindings)
-  (windmove-default-keybindings))
+;(when (fboundp 'windmove-default-keybindings)
+;  (windmove-default-keybindings))
+(windmove-default-keybindings 'meta)
 
 ;; Enable projectile (project management) globally
 (projectile-global-mode)

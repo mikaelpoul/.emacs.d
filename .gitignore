@@ -29,3 +29,8 @@ url/
 # don't ignore the .gitignore and .gitmodules file
 !.gitignore
 !.gitmodules
+
+# Others
+*README.md#
+projectile-bookmarks.eld
+

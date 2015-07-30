@@ -42,3 +42,36 @@
 (add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+
+;; Tabbar (tabs)
+(add-to-list 'load-path "~/.emacs.d/plugins/tabbar")
+(require 'tabbar)
+(tabbar-mode t)
+
+;; Smax (M-x enchancement: Shows recently and most freq used commands)
+(add-to-list 'load-path "~/.emacs.d/plugins/smex")
+(require 'smex) ; Not needed if you use package.el
+(smex-initialize) ; Can be omitted. This might cause a (minimal) delay
+                  ; when Smex is auto-initialized on its first run.
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+;; This is your old M-x.
+(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+
+;; Wind mode (shift+arrow key to shift move between buffers)
+(when (fboundp 'windmove-default-keybindings)
+  (windmove-default-keybindings))
+
+;; Enable projectile (project management) globally
+(projectile-global-mode)
+
+;; Enable auto-complete globally
+(global-auto-complete-mode t)
+
+;; Undo-tree
+(add-to-list 'load-path "~/.emacs.d/plugins/undo-tree")
+(require 'undo-tree)
+(global-undo-tree-mode)
+
+;; MAGIT
+(global-set-key (kbd "C-x g") 'magit-status)

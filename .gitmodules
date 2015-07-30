@@ -17,3 +17,24 @@
 [submodule "markdown-mode"]
 	path = plugins/markdown-mode
 	url = git://jblevins.org/git/markdown-mode.git
+
+# TabBarMode (tabbar)
+[submodule "tabbar"]
+	path = plugins/tabbar
+	url = https://github.com/dholm/tabbar.git
+
+# Smex (M-x enhancement)
+[submodule "smex"]
+	path = plugins/smex
+	url = https://github.com/nonsequitur/smex.git
+
+# Projectile
+#[submodule "projectile"]
+#	path = plugins/projectile
+#	url = https://github.com/bbatsov/projectile.git
+
+# Undo-tree
+[submodule "undo-tree"]
+	path = plugins/undo-tree
+	url = http://www.dr-qubit.org/git/undo-tree.git
+

@@ -16,13 +16,15 @@
 *.bib.bak
 
 # ignore prelim files
-*prelim
+*prelim.
 
-# ignore ido.last
+# ignore ido.last, smex-items and ac-comphist
 ido.last
-
-# ignore elpa
+smex-items
+ac-comphist.dat
+# ignore elpa and url folders
 elpa/
+url/
 
 # don't ignore the .gitignore and .gitmodules file
 !.gitignore

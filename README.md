@@ -37,9 +37,9 @@ in the `.emacs`-file.
 - `M-n w` to *weave* (capital W to choose weaver), and `M-n e` to *export* (capital E to choose exporter)
 
 *projectile*
+
 Keybinding         | Description
 -------------------|------------------------------------------------------------
-<kbd>C-c p C-h</kbd> | Display/show projectiles keybindings
 <kbd>C-c p f</kbd> | Display a list of all files in the project. With a prefix argument it will clear the cache first.
 <kbd>C-c p F</kbd> | Display a list of all files in all known projects.
 <kbd>C-c p g</kbd> | Display a list of all files at point in the project. With a prefix argument it will clear the cache first.
@@ -77,3 +77,4 @@ Keybinding         | Description
 <kbd>C-c p S</kbd> | Save all project buffers.
 <kbd>C-c p m</kbd> | Run the commander (an interface to run commands with a single key).
 <kbd>C-c p ESC</kbd> | Switch to the most recently selected Projectile buffer.
+<kbd>C-c p C-h</kbd> | Display/show projectiles keybindings

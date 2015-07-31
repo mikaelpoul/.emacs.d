@@ -42,3 +42,9 @@
 [submodule "polymode"]
 	path = plugins/polymode
 	url = https://github.com/vitoshka/polymode.git
+
+## Org-mode
+[submodule "org-mode"]
+	path = plugins/org-mode
+	url = git://orgmode.org/org-mode.git
+

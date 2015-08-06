@@ -33,7 +33,10 @@ in the `.emacs`-file.
 - `F F` (in capital letters) to *git pull*
 
 *polymode*
-- `M-n r` in polymode-r mode to use the new *rmarkdown* (`render()`). Thanks to @r2evans and @malcook. 
+- `M-n r` in polymode-r mode to use the new *rmarkdown* (`render()`). Thanks to @r2evans and @malcook.
+    - Ploymode dependencies: OS needs `lmodern`, `pandoc`, and LaTex;  R needs `pander`, `knitr` and `rmarkdown`.
+
+
 - `M-n w` to *weave* (capital W to choose weaver), and `M-n e` to *export* (capital E to choose exporter)
 
 *projectile*

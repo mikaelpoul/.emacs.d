@@ -18,6 +18,7 @@ in the `.emacs`-file.
 - Install `latex-preview-pane` using package-install: `M-x package-install RET latex-preview-pane RET`
 - Install `magit` using package-install: `M-x package-install RET magit RET`
 - Install `flycheck` using package-install: `M-x package-install RET flycheck RET`
+  - Also, for flycheck and R, install the `lintr`-package in R
 
 **Keybindings**
 

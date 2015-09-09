@@ -17,8 +17,9 @@ in the `.emacs`-file.
 - Install `auto-complete` using package-install: `M-x package-install RET auto-complete RET`
 - Install `latex-preview-pane` using package-install: `M-x package-install RET latex-preview-pane RET`
 - Install `magit` using package-install: `M-x package-install RET magit RET`
+- Install `flycheck` using package-install: `M-x package-install RET flycheck RET`
 
-**keybindings**
+**Keybindings**
 
 *undo-tree*
 - `C-x u` to vizualize the undo tree

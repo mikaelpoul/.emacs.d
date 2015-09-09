@@ -118,3 +118,6 @@
 (global-set-key "\C-cc" 'org-capture)
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
+
+;; load flycheck
+(add-hook 'after-init-hook #'global-flycheck-mode)

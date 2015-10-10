@@ -6,8 +6,10 @@
 - Install `auto-complete` using package-install: `M-x package-install RET auto-complete RET`
 - Install `latex-preview-pane` using package-install: `M-x package-install RET latex-preview-pane RET`
 - Install `magit` using package-install: `M-x package-install RET magit RET`
+- Install `flycheck` using package-install: `M-x package-install RET flycheck RET`
+  - Also, for flycheck and R, install the `lintr`-package in R
 
-**keybindings**
+**Keybindings**
 
 *undo-tree*
 - `C-x u` to vizualize the undo tree
@@ -22,7 +24,10 @@
 - `F F` (in capital letters) to *git pull*
 
 *polymode*
-- `M-n r` in polymode-r mode to use the new *rmarkdown* (`render()`). Thanks to @r2evans and @malcook. 
+- `M-n r` in polymode-r mode to use the new *rmarkdown* (`render()`). Thanks to @r2evans and @malcook.
+    - Ploymode dependencies: OS needs `lmodern`, `pandoc`, and LaTex;  R needs `pander`, `knitr` and `rmarkdown`.
+
+
 - `M-n w` to *weave* (capital W to choose weaver), and `M-n e` to *export* (capital E to choose exporter)
 
 *projectile*

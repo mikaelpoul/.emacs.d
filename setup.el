@@ -3,7 +3,7 @@
 
 ;; Adds the monokai theme to the custom theme load path (set the theme using Custom Theme feature)
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/monokai-emacs")
-(add-to-list 'custom-theme-load-path "~/.emacs.d/elpa/zenburn-0.1")
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 
 ;; Load package repositories
 (require 'package)

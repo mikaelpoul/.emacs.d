@@ -8,6 +8,10 @@
 - Install `magit` using package-install: `M-x package-install RET magit RET`
 - Install `flycheck` using package-install: `M-x package-install RET flycheck RET`
   - Also, for flycheck and R, install the `lintr`-package in R
+- For `load-theme-buffer-local` using package-install: `M-x package-install RET load-theme-buffer-local`
+- For `pdf-tools`: see https://github.com/politza/pdf-tools for dependencies and do `M-x package-install RET pdf-tools`
+- For `Helm`: Download from git and make.
+- For python: see 
 
 **Keybindings**
 
@@ -72,3 +76,37 @@ Keybinding         | Description
 <kbd>C-c p m</kbd> | Run the commander (an interface to run commands with a single key).
 <kbd>C-c p ESC</kbd> | Switch to the most recently selected Projectile buffer.
 <kbd>C-c p C-h</kbd> | Display/show projectiles keybindings
+
+
+
+*Helm*
+
+
+M-x	helm-M-x	List commands
+M-y	helm-show-kill-ring	Shows the content of the kill ring
+C-x b	helm-mini	Shows open buffers, recently opened files
+C-x C-f	helm-find-files	The helm version for find-file
+C-s	helm-ff-run-grep	Run grep from within helm-find-files
+C-c h i	helm-semantic-or-imenu	Helm interface to semantic/imenu
+C-c h m	helm-man-woman	Jump to any man entry
+C-c h /	helm-find	Helm interface to find
+C-c h l	helm-locate	Helm interface to locate
+C-c h o	helm-occur	Similar to occur
+C-c h a	helm-apropos	Describes commands, functions, variables, …
+C-c h h g	helm-info-gnus	 
+C-c h h i	helm-info-at-point	 
+C-c h h r	helm-info-emacs	 
+C-c h <tab>	helm-lisp-completion-at-point	Provides a list of available functions
+C-c h b	helm-resume	Resumes a previous helm session
+C-h SPC	helm-all-mark-rings	Views content of local and global mark rings
+C-c h r	helm-regex	Visualizes regex matches
+C-c h x	helm-register	Shows content of registers
+C-c h t	helm-top	Helm interface to top
+C-c h s	helm-surfraw	Command line interface to many web search engines
+C-c h g	helm-google-suggest	Interactively enter search terms and get results from Google in helm buffer
+C-c h c	helm-color	Lists all available faces
+C-c h M-:	helm-eval-expression-with-eldoc	Get instant results for emacs lisp expressions in the helm buffer
+C-c h C-,	helm-calcul-expression	Helm interface to calc
+C-c C-l	helm-eshell-history	Interface to eshell history
+C-c C-l	helm-comint-input-ring	Interface to shell history
+C-c C-l	helm-mini-buffer-history	Interface to mini-buffer history

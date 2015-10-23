@@ -1,0 +1,24 @@
+;; Object about/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "about/"
+  :tables
+  (list
+    (semanticdb-table "index.html"
+      :major-mode 'html-mode
+      :tags 
+        '( ("About" section nil nil [189 690])
+            ("Your awesome title" section (:members 
+              ( ("About" anchor nil nil [849 852])
+                ("About" section (:members 
+                  ( ("Your awesome title" section (:members 
+                      ( ("your-email@domain.com" anchor nil nil [2347 2350])
+                        ("jekyll" anchor nil nil [2567 2570])
+                        ("jekyllrb" anchor nil nil [3787 3790]))                      ) nil [2127 5223]))                  ) nil [1866 5223]))              ) nil [690 5223]))          
+      :file "index.html"
+      :pointmax 5223
+      :fsize 5222
+      :lastmodtime '(22056 729 590060 121000)
+      :unmatched-syntax nil))
+  :file "!home!mikaelpoul!test-site!_site!about!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

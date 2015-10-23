@@ -48,3 +48,7 @@
 	path = plugins/org-mode
 	url = git://orgmode.org/org-mode.git
 
+## Helm
+[submodule "helm"]
+        path = plugins/helm
+	url = https://github.com/emacs-helm/helm

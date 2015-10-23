@@ -1,9 +1,9 @@
 ;; Main emacs setup
 ;; Mikael Poul Johannesson
 
-;; Adds the monokai theme to the custom theme load path (set the theme using Custom Theme feature)
+;; Adds the monokaix theme to the custom theme load path (set the theme using Custom Theme feature)
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/monokai-emacs")
-
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 
 ;; Load package repositories
 (require 'package)
@@ -24,6 +24,8 @@
 ;; Load all setup files
 (load "~/.emacs.d/setup-ess.el") ;; ess-specific setup
 (load "~/.emacs.d/setup-latex.el") ;; latex specific setup
+(load "~/.emacs.d/setup-python.el") ;; python specific setup
+(load "~/.emacs.d/setup-helm.el") ;; helm-specific setup
 
 ;; Load IDO
 (require 'ido)
@@ -70,10 +72,19 @@
 ;; Enable auto-complete globally
 (global-auto-complete-mode t)
 
-;; Undo-tree
+;;;;;;;;;;;;;;;;;;;;;
+;; undo tree mode  ;;
+;;;;;;;;;;;;;;;;;;;;;
 (add-to-list 'load-path "~/.emacs.d/plugins/undo-tree")
 (require 'undo-tree)
-(global-undo-tree-mode)
+;;turn on everywhere
+(global-undo-tree-mode 1)
+;; make ctrl-z undo
+(global-set-key (kbd "C-z") 'undo)
+;; make ctrl-Z redo
+(defalias 'redo 'undo-tree-redo)
+(global-set-key (kbd "C-S-z") 'redo)
+
 
 ;; MAGIT
 (global-set-key (kbd "C-x g") 'magit-status)
@@ -118,37 +129,19 @@
 (global-set-key "\C-cc" 'org-capture)
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
+(setq org-startup-indented t)
 
 ;; load flycheck
-(add-hook 'after-init-hook #'global-flycheck-mode)
+;; (add-hook 'after-init-hook #'global-flycheck-mode)
 
- ;; tufte-book class for writing classy books
-(require 'ox-latex) 
-(add-to-list 'org-latex-classes
-'("tuftebook"
-"\\documentclass{tufte-book}\n
-\\usepackage{color}
-\\usepackage{amssymb}
-\\usepackage{gensymb}
-\\usepackage{nicefrac}
-\\usepackage{units}"
-("\\section{%s}" . "\\section*{%s}")
-("\\subsection{%s}" . "\\subsection*{%s}")
-("\\paragraph{%s}" . "\\paragraph*{%s}")
-("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
 
- ;; tufte-handout class for writing classy handouts and papers
-(require 'ox-latex) 
-(add-to-list 'org-latex-classes
-'("tuftehandout"
-"\\documentclass{tufte-handout}
-\\usepackage{color}
-\\usepackage{amssymb}
-\\usepackage{amsmath}
-\\usepackage{gensymb}
-\\usepackage{nicefrac}
-\\usepackage{units}"
-("\\section{%s}" . "\\section*{%s}")
-("\\subsection{%s}" . "\\subsection*{%s}")
-("\\paragraph{%s}" . "\\paragraph*{%s}")
-("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+;; for pdf-tools
+(pdf-tools-install)
+
+;; Highlight paren (https://twitter.com/cd_lucas/status/636124335825096704)
+(show-paren-mode t)
+(setq show-paren-style 'parenthesis)
+
+
+(setq-default word-wrap t)
+

@@ -42,7 +42,6 @@
 ;; Section : Emacs shells work better
 ;; http://snarfed.org/why_i_run_shells_inside_emacs
 (setq ansi-color-for-comint-mode 'filter)
-(setq comint-prompt-read-only t)
 (setq comint-scroll-to-bottom-on-input t)
 (setq comint-scroll-to-bottom-on-output t)
 (setq comint-move-point-for-output t)

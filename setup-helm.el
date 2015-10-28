@@ -52,7 +52,6 @@
 
 ;; Enable man-page at point
 (add-to-list 'helm-sources-using-default-as-input 'helm-source-man-pages)
-
 (setq helm-locate-fuzzy-match t)
 
 

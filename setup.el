@@ -129,19 +129,40 @@
 (global-set-key "\C-cc" 'org-capture)
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
-(setq org-startup-indented t)
 
 ;; load flycheck
 ;; (add-hook 'after-init-hook #'global-flycheck-mode)
 
-
 ;; for pdf-tools
-(pdf-tools-install)
+;;(pdf-tools-install)
 
 ;; Highlight paren (https://twitter.com/cd_lucas/status/636124335825096704)
 (show-paren-mode t)
 (setq show-paren-style 'parenthesis)
 
+;; Use f1/f2 to load monokai/zenburn
+(setq current-t43m3 nil)
 
-(setq-default word-wrap t)
+(defun enab-theme (theme) 
+  (if current-t43m3 (disable-theme current-t43m3))
+  (setq current-t43m3 theme) 
+  (load-theme theme t)) 
 
+(defun disab-current-theme () 
+  (if current-t43m3 (disable-theme current-t43m3))
+  (setq current-t43m3 nil))
+
+(global-set-key (kbd "<f1>") '(lambda () (interactive) (enab-theme 'monokai)))
+(global-set-key (kbd "<f2>") '(lambda () (interactive) (enab-theme 'zenburn)))
+
+(defun l0ad-theme (name) 
+  (interactive
+   (list
+    (intern (completing-read "Load custom theme: "
+                 (mapcar 'symbol-name (custom-available-themes))))))
+  (enab-theme name))
+
+(setq d3fault-theme (getenv "EMACS_DEFAULT_THEME"))
+
+(when d3fault-theme
+  (enab-theme (intern d3fault-theme)))

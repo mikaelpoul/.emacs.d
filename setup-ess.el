@@ -33,16 +33,9 @@
 (add-hook 'ess-R-post-run-hook 'ess-execute-screen-options)
 (define-key inferior-ess-mode-map "\C-cw" 'ess-execute-screen-options) ;; 
 
-;; Dont prompt for "active process existsyadayada"s
-  (add-hook 'ess-post-run-hook 
-            (lambda () (set-process-query-on-exit-flag 
-                        (get-ess-process ess-current-process-name) nil)) nil)
-
-
 ;; Section : Emacs shells work better
 ;; http://snarfed.org/why_i_run_shells_inside_emacs
 (setq ansi-color-for-comint-mode 'filter)
-(setq comint-prompt-read-only t)
 (setq comint-scroll-to-bottom-on-input t)
 (setq comint-scroll-to-bottom-on-output t)
 (setq comint-move-point-for-output t)

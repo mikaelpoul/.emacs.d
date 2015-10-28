@@ -1,9 +1,9 @@
-;; Fill-column indicator
-(add-to-list 'load-path "~/.emacs.d/plugins/fill-column-indicator")
-(require 'fill-column-indicator)
-(define-globalized-minor-mode
- global-fci-mode fci-mode (lambda () (fci-mode 1)))
-(global-fci-mode t)
+;; ;; Fill-column indicator
+;; (add-to-list 'load-path "~/.emacs.d/plugins/fill-column-indicator")
+;; (require 'fill-column-indicator)
+;; (define-globalized-minor-mode
+;;  global-fci-mode fci-mode (lambda () (fci-mode 1)))
+;; (global-fci-mode t)
 
 ; python-mode
 (setq py-install-directory "~/.emacs.d/plugins/python-mode.el-6.2.1")
@@ -13,6 +13,7 @@
 ; use IPython
 (setq-default py-shell-name "ipython")
 (setq-default py-which-bufname "IPython")
+
 ; use the wx backend, for both mayavi and matplotlib
 (setq py-python-command-args
   '("--gui=wx" "--pylab=wx" "-colors" "Linux"))

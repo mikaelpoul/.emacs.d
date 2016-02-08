@@ -48,4 +48,4 @@
   (next-line)
 )
 
-(global-set-key  (kbd "C-<return>") 'my-python-line)
+;;(define-key python-mode (kbd "C-<return>") 'my-python-line)

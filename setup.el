@@ -31,11 +31,11 @@
 (require 'ido)
 (ido-mode t)
 
-;; Yasnippet
-(add-to-list 'load-path
-              "~/.emacs.d/plugins/yasnippet")
-(require 'yasnippet)
-(yas-global-mode 1)
+;; ;; Yasnippet
+;; (add-to-list 'load-path
+;;               "~/.emacs.d/plugins/yasnippet")
+;; (require 'yasnippet)
+;; (yas-global-mode 1)
 
 ;; Markdown mode
 (add-to-list 'load-path "~/.emacs.d/plugins/markdown-mode")
@@ -66,11 +66,11 @@
 ;  (windmove-default-keybindings))
 (windmove-default-keybindings 'meta)
 
-;; Enable projectile (project management) globally
-(projectile-global-mode)
+;; ;; Enable projectile (project management) globally
+;; (projectile-global-mode)
 
-;; Enable auto-complete globally
-(global-auto-complete-mode t)
+;; ;; Enable auto-complete globally
+;; (global-auto-complete-mode t)
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; undo tree mode  ;;
@@ -84,7 +84,6 @@
 ;; make ctrl-Z redo
 (defalias 'redo 'undo-tree-redo)
 (global-set-key (kbd "C-S-z") 'redo)
-
 
 ;; MAGIT
 (global-set-key (kbd "C-x g") 'magit-status)
@@ -159,10 +158,14 @@
   (interactive
    (list
     (intern (completing-read "Load custom theme: "
-                 (mapcar 'symbol-name (custom-available-themes))))))
+			     (mapcar 'symbol-name (custom-available-themes))))))
   (enab-theme name))
 
 (setq d3fault-theme (getenv "EMACS_DEFAULT_THEME"))
 
 (when d3fault-theme
   (enab-theme (intern d3fault-theme)))
+
+;; Stata setup
+(setenv "PATH" (concat (getenv "PATH") ":~/Stata14Linux64"))
+(setq exec-path (append exec-path '("~/Stata14Linux64")))

@@ -25,6 +25,9 @@ ac-comphist.dat
 # ignore elpa and url folders
 elpa/
 url/
+session.10*
+#setup-helm.el#
+semanticdb/
 
 # don't ignore the .gitignore and .gitmodules file
 !.gitignore

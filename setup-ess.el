@@ -3,7 +3,6 @@
 ;; ;; Load ESS
 ;; (add-to-list 'load-path "~/.emacs.d/ESS/lisp")
 ;; (load "ess-site")
-
 (require 'ess-site)
 
 ;; Do not load data or save envir
@@ -20,7 +19,7 @@
 (setq ess-help-own-frame 'one)
 (setq ess-help-reuse-window t)
 
-;; Dont print evaluated commands: Speeds up eval. when eval'ing large region
+;; Dont print evaluated commands: Speeds up eval. when eval'ing long stuff
 (setq ess-eval-visibly nil)
 
 ;; Start R session without prompt
@@ -46,26 +45,6 @@
   (reindent-then-newline-and-indent))
 (define-key ess-mode-map (kbd "C-<") 'then_R_operator)
 (define-key inferior-ess-mode-map (kbd "C-<") 'then_R_operator)
-
-;; Set ess style
-(add-to-list 'ess-style-alist
-             '(my-style
-               (ess-indent-level . 4)
-               (ess-first-continued-statement-offset . 2)
-               (ess-continued-statement-offset . 0)
-               (ess-brace-offset . -4)
-               (ess-expression-offset . 4)
-               (ess-else-offset . 0)
-               (ess-close-brace-offset . 0)
-               (ess-brace-imaginary-offset . 2)
-               (ess-continued-brace-offset . 0)
-               (ess-arg-function-offset . 4)
-	       (ess-arg-function-offset-new-line . '(4))
-               ))
-(setq ess-default-style 'my-style)
-
-(add-hook 'ess-mode-hook (lambda () (setq ess-default-style 'my-style)))
-(add-hook 'ess-R-post-run-hook (lambda () (setq ess-default-style 'my-style)))
 
 (defun smart-operator-self-insert-command (arg)
   "Insert the entered operator plus surrounding spaces."
@@ -108,29 +87,24 @@
 
 ;; (add-hook 'ess-mode-hook 'ess-keys-hook)
 
-;; R-internals manual
-;;; ESS
+;; Set ess style
+(setq ess-default-style 'RStudio)
+(add-hook 'ess-mode-hook (lambda () (setq ess-default-style 'RStudio)))
+(add-hook 'ess-R-post-run-hook (lambda () (setq ess-default-style 'RSudio)))
+
 (add-hook 'ess-mode-hook
-      (lambda ()
-        (ess-set-style 'C++ 'quiet)
-        ;; Because
-        ;;                                 DEF GNU BSD K&R C++
-        ;; ess-indent-level                  2   2   8   5   2
-        ;; ess-continued-statement-offset    2   2   8   5   2
-        ;; ess-brace-offset                  0   0  -8  -5  -4
-        ;; ess-arg-function-offset           2   4   0   0   0
-        ;; ess-expression-offset             4   2   8   5   2
-        ;; ess-else-offset                   0   0   0   0   0
-        ;; ess-close-brace-offset            0   0   0   0   0
-        (add-hook 'local-write-file-hooks
-              (lambda ()
-            (ess-nuke-trailing-whitespace)))))
+	  (lambda ()
+	    (ess-set-style 'RStudio 'quiet)
+	    (add-hook 'local-write-file-hooks
+		      (lambda ()
+			(ess-nuke-trailing-whitespace)))))
 ;;(setq ess-nuke-trailing-whitespace-p 'ask)
 ;; or even
 (setq ess-nuke-trailing-whitespace-p t)
+
 ;; Perl
 (add-hook 'perl-mode-hook
-      (lambda () (setq perl-indent-level 4)))
+	  (lambda () (setq perl-indent-level 2)))
 
 ;; Pretty arrows and magrittr pipes in R
 (defvar pretty-alist
@@ -145,22 +119,26 @@
        (font-lock-add-keywords
         nil
         `((,(concat "\\(^\\|[^a-zA-Z0-9]\\)\\(" word "\\)[a-zA-Z]")
-            (0 (progn
-                 (decompose-region (match-beginning 2) (match-end 2))
-                 nil)))))
+	   (0 (progn
+		(decompose-region (match-beginning 2) (match-end 2))
+		nil)))))
        (font-lock-add-keywords
         nil
         `((,(concat "\\(^\\|[^a-zA-Z0-9]\\)\\(" word "\\)[^a-zA-Z]")
-            (0 (progn
-                 (compose-region (match-beginning 2) (match-end 2)
-                  ,char)
-                 nil)))))))
+	   (0 (progn
+		(compose-region (match-beginning 2) (match-end 2)
+				,char)
+		nil)))))))
    pretty-alist))
 
 (add-hook 'R-mode-hook
-      (lambda ()
-        (font-lock-add-keywords nil
-                 '(("\\(%>%\\)" 1
-                    font-lock-builtin-face t)))))
+	  (lambda ()
+	    (font-lock-add-keywords nil
+				    '(("\\(%>%\\)" 1
+				       font-lock-builtin-face t)))))
 
 (define-key ess-mode-map [(super .)] "%>%")
+
+
+(require 'ess-jags-d)
+(require 'ess-bugs-d)

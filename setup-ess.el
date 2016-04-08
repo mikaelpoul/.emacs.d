@@ -90,7 +90,7 @@
 ;; Set ess style
 (setq ess-default-style 'RStudio)
 (add-hook 'ess-mode-hook (lambda () (setq ess-default-style 'RStudio)))
-(add-hook 'ess-R-post-run-hook (lambda () (setq ess-default-style 'RSudio)))
+(add-hook 'ess-R-post-run-hook (lambda () (setq ess-default-style 'RStudio)))
 
 (add-hook 'ess-mode-hook
 	  (lambda ()
@@ -142,3 +142,9 @@
 
 (require 'ess-jags-d)
 (require 'ess-bugs-d)
+
+
+;; Use C-- to assign assign
+(setq ess-S-assign-key (kbd "C--"))
+(ess-toggle-S-assign-key t)
+(ess-toggle-underscore nil)

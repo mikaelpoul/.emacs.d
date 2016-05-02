@@ -169,3 +169,7 @@
 ;; Stata setup
 (setenv "PATH" (concat (getenv "PATH") ":~/Stata14Linux64"))
 (setq exec-path (append exec-path '("~/Stata14Linux64")))
+
+;; Setup for org-mode
+(require 'org-bullets)
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))

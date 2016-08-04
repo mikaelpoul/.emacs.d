@@ -52,3 +52,8 @@
 [submodule "helm"]
         path = plugins/helm
 	url = https://github.com/emacs-helm/helm.git
+
+## Org-gcal (gcal sync)
+[submodule "org-gcal.el"]
+        path = plugins/org-gcal.el
+	url = https://github.com/myuhe/org-gcal.el.git

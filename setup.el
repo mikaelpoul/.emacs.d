@@ -26,6 +26,7 @@
 (load "~/.emacs.d/setup-latex.el") ;; latex specific setup
 (load "~/.emacs.d/setup-python.el") ;; python specific setup
 (load "~/.emacs.d/setup-helm.el") ;; helm-specific setup
+(load "~/.emacs.d/setup-org.el") ;; org-mode setup
 
 ;; Load IDO
 (require 'ido)
@@ -170,6 +171,26 @@
 (setenv "PATH" (concat (getenv "PATH") ":~/Stata14Linux64"))
 (setq exec-path (append exec-path '("~/Stata14Linux64")))
 
-;; Setup for org-mode
-(require 'org-bullets)
-(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+;; ;; Setup for org-mode
+;; (require 'org-bullets)
+;; (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+
+
+;; Org-mode
+(org-babel-load-file "~/.emacs.d/emacs-config.org")
+
+(setq org-startup-indented t)
+(global-visual-line-mode t)
+
+;; (org-babel-do-load-languages
+;;  'org-babel-load-languages
+;;  '((R . t)
+;;    (latex . t)))
+
+(setq org-confirm-babel-evaluate nil)
+
+(add-hook 'org-babel-after-execute-hook 'org-display-inline-images)   
+(add-hook 'org-mode-hook 'org-display-inline-images)
+
+;; Syntax highlighting within src block
+(setq org-src-fontify-natively t)  

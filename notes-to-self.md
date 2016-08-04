@@ -1,5 +1,9 @@
 ###Other notes-to-self
 
+** New 2016-07
+- Install 'calfw' from package-install
+- (Installed org-gcal from github)
+
 **Installation**
 - Install `auctex` using package-install: `M-x package-list-packages RET`, locate `auctex`, and install (`package-list-packages` updates the package list).
 - Install `projectile` using package-install: `M-x package-install RET projectile`

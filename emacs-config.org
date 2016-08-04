@@ -1,0 +1,20 @@
+#+TITLE: Emacs configuration
+#+AUTHOR: Mikael Johannesson
+
+* Lets test this
+
+#+BEGIN_SRC emacs-lisp
+
+(setq user-full-name "Mikael Poul Johannesson"
+      user-mail-address "mikajoh@gmail.com"
+      calendar-latitude 60.39
+      calendar-longitude 5.33
+      calendar-location-name "Bergen")
+
+#+END_SRC
+
+
+#+BEGIN_SRC emacs-lisp
+(require 'org-bullets)
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+#+END_SRC

@@ -39,3 +39,6 @@ projectile-bookmarks.eld
 semanticdb/
 session.*
 *#
+
+# Ignore secret org-gcal settings
+setup-org-secret.el

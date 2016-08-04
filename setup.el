@@ -27,6 +27,7 @@
 (load "~/.emacs.d/setup-python.el") ;; python specific setup
 (load "~/.emacs.d/setup-helm.el") ;; helm-specific setup
 (load "~/.emacs.d/setup-org.el") ;; org-mode setup
+(load "~/.emacs.d/setup-org-secret.el") ;; org-gcal settings
 
 ;; Load IDO
 (require 'ido)

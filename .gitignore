@@ -42,3 +42,5 @@ session.*
 
 # Ignore secret org-gcal settings
 setup-org-secret.el
+
+abbrev_defs

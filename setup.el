@@ -5,6 +5,7 @@
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/monokai-emacs")
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 
+
 ;; Load package repositories
 (require 'package)
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
@@ -13,6 +14,10 @@
 			 ("melpa-stable" . "http://stable.melpa.org/packages/")))
 (package-initialize)
 
+
+;; Start-up screen
+(setq inhibit-splash-screen t)
+(setq inhibit-startup-message t)
 
 ;; Set user data
 (setq user-full-name "Mikael Poul Johannesson")
@@ -27,7 +32,8 @@
 (load "~/.emacs.d/setup-python.el") ;; python specific setup
 (load "~/.emacs.d/setup-helm.el") ;; helm-specific setup
 (load "~/.emacs.d/setup-org.el") ;; org-mode setup
-(load "~/.emacs.d/setup-org-secret.el") ;; org-gcal settings
+;; (load "~/.emacs.d/setup-org-secret.el") ;; org-gcal settings
+
 
 ;; Load IDO
 (require 'ido)
@@ -39,15 +45,10 @@
 ;; (require 'yasnippet)
 ;; (yas-global-mode 1)
 
-;; Markdown mode
-(add-to-list 'load-path "~/.emacs.d/plugins/markdown-mode")
-(autoload 'markdown-mode "markdown-mode"
-   "Major mode for editing Markdown files" t)
-(add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
-(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
-;;(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
-;;(add-to-list 'auto-mode-alist '("\\.Rmd\\'" . markdown-mode))
-
+;; ;; Markdown mode
+;; (add-to-list 'load-path "~/.emacs.d/plugins/markdown-mode")
+;; (autoload 'markdown-mode "markdown-mode"
+  
 ;; Tabbar (tabs)
 (add-to-list 'load-path "~/.emacs.d/plugins/tabbar")
 (require 'tabbar)
@@ -96,30 +97,30 @@
               load-path))
 (require 'poly-R)
 (require 'poly-markdown)
-(add-to-list 'auto-mode-alist '("\\.md" . poly-markdown-mode))
-(add-to-list 'auto-mode-alist '("\\.Snw" . poly-noweb+r-mode)) ;; (r-modes)
-(add-to-list 'auto-mode-alist '("\\.Rnw" . poly-noweb+r-mode))
-(add-to-list 'auto-mode-alist '("\\.Rmd" . poly-markdown+r-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\" . poly-markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.Snw\\" . poly-noweb+r-mode)) ;; (r-modes)
+(add-to-list 'auto-mode-alist '("\\.Rnw\\" . poly-noweb+r-mode))
+(add-to-list 'auto-mode-alist '("\\.Rmd\\" . poly-markdown+r-mode))
 (add-to-list 'auto-mode-alist '("\\.rmd" . poly-markdown+r-mode))
 
-;; use rmarkdown (using polymode)
-;; Thanks to @malcook and @r2evans!
-(defun rmarkdown-render ()
-  "run rmarkdown::render() on the current file and display results in buffer *Shell Command Output*"
-  (interactive)
-  (let ((render-command (read-string "render command:"
-                                     (format "render('%s',%s);"
-                                             (shell-quote-argument (buffer-file-name))
-                                             "'all'"
-                                             ))))
-    (shell-command
-     (message
-      "Rscript -e \"withCallingHandlers({library(rmarkdown); library(pander); %s}, error = function(e) print(sys.calls()))\""
-      render-command
-      )
-     )
-    ))
-(define-key polymode-mode-map [(meta n) (r)] 'rmarkdown-render)
+;; ;; use rmarkdown (using polymode)
+;; ;; Thanks to @malcook and @r2evans!
+;; (defun rmarkdown-render ()
+;;   "run rmarkdown::render() on the current file and display results in buffer *Shell Command Output*"
+;;   (interactive)
+;;   (let ((render-command (read-string "render command:"
+;;                                      (format "render('%s',%s);"
+;;                                              (shell-quote-argument (buffer-file-name))
+;;                                              "'all'"
+;;                                              ))))
+;;     (shell-command
+;;      (message
+;;       "Rscript -e \"withCallingHandlers({library(rmarkdown); library(pander); %s}, error = function(e) print(sys.calls()))\""
+;;       render-command
+;;       )
+;;      )
+;;     ))
+;; (define-key polymode-mode-map [(meta n) (r)] 'rmarkdown-render)
 
 
 ;; Org-mode
@@ -178,7 +179,7 @@
 
 
 ;; Org-mode
-(org-babel-load-file "~/.emacs.d/emacs-config.org")
+;;(org-babel-load-file "~/.emacs.d/emacs-config.org")
 
 (setq org-startup-indented t)
 (global-visual-line-mode t)

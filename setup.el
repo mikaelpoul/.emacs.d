@@ -100,6 +100,7 @@
 (add-to-list 'auto-mode-alist '("\\.Snw" . poly-noweb+r-mode)) ;; (r-modes)
 (add-to-list 'auto-mode-alist '("\\.Rnw" . poly-noweb+r-mode))
 (add-to-list 'auto-mode-alist '("\\.Rmd" . poly-markdown+r-mode))
+(add-to-list 'auto-mode-alist '("\\.rmd" . poly-markdown+r-mode))
 
 ;; use rmarkdown (using polymode)
 ;; Thanks to @malcook and @r2evans!
@@ -115,12 +116,11 @@
      (message
       "Rscript -e \"withCallingHandlers({library(rmarkdown); library(pander); %s}, error = function(e) print(sys.calls()))\""
       render-command
-      ))
+      )
+     )
     ))
 (define-key polymode-mode-map [(meta n) (r)] 'rmarkdown-render)
 
-;; Do not show welcome screen
-(setq inhibit-startup-message t)
 
 ;; Org-mode
 (add-to-list 'load-path "~/.emacs.d/plugins/orgdir/lisp")

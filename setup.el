@@ -12,8 +12,7 @@
                          ("marmalade" . "http://marmalade-repo.org/packages/")
                          ("melpa" . "http://melpa.org/packages/")
 			 ("melpa-stable" . "http://stable.melpa.org/packages/")))
-(package-initialize)
-
+;(package-initialize)
 
 ;; Start-up screen
 (setq inhibit-splash-screen t)
@@ -45,10 +44,31 @@
 ;; (require 'yasnippet)
 ;; (yas-global-mode 1)
 
-;; ;; Markdown mode
-;; (add-to-list 'load-path "~/.emacs.d/plugins/markdown-mode")
-;; (autoload 'markdown-mode "markdown-mode"
-  
+;; Markdown mode
+(add-to-list 'load-path "~/.emacs.d/plugins/markdown-mode")
+(autoload 'markdown-mode "markdown-mode")
+
+;; ;; Polymode
+;; (setq load-path
+;;       (append '("~/.emacs.d/plugins/polymode/"  "~/.emacs.d/plugins/polymode/modes")
+;;               load-path))
+(require 'poly-R)
+(require 'poly-markdown)
+;; (add-to-list 'auto-mode-alist '("\\.md" . poly-markdown-mode))
+;; (add-to-list 'auto-mode-alist '("\\.Snw" . poly-noweb+r-mode)) ;; (r-modes)
+;; (add-to-list 'auto-mode-alist '("\\.Rnw" . poly-noweb+r-mode))
+;; (add-to-list 'auto-mode-alist '("\\.Rmd" . poly-markdown+r-mode))
+;; (add-to-list 'auto-mode-alist '("\\.rmd" . poly-markdown+r-mode))
+(add-to-list 'auto-mode-alist '("\\.Snw$" . poly-noweb+r-mode))
+(add-to-list 'auto-mode-alist '("\\.Rnw$" . poly-noweb+r-mode))
+(add-to-list 'auto-mode-alist '("\\.Rmd$" . poly-markdown+r-mode))
+(add-to-list 'auto-mode-alist '("\\.rapport$" . poly-rapport-mode))
+(add-to-list 'auto-mode-alist '("\\.Rhtml$" . poly-html+r-mode))
+(add-to-list 'auto-mode-alist '("\\.Rbrew$" . poly-brew+r-mode))
+(add-to-list 'auto-mode-alist '("\\.Rcpp$" . poly-r+c++-mode))
+(add-to-list 'auto-mode-alist '("\\.cppR$" . poly-c++r-mode))
+
+
 ;; Tabbar (tabs)
 (add-to-list 'load-path "~/.emacs.d/plugins/tabbar")
 (require 'tabbar)
@@ -90,18 +110,6 @@
 
 ;; MAGIT
 (global-set-key (kbd "C-x g") 'magit-status)
-
-;; Polymode
-(setq load-path
-      (append '("~/.emacs.d/plugins/polymode/"  "~/.emacs.d/plugins/polymode/modes")
-              load-path))
-(require 'poly-R)
-(require 'poly-markdown)
-(add-to-list 'auto-mode-alist '("\\.md\\" . poly-markdown-mode))
-(add-to-list 'auto-mode-alist '("\\.Snw\\" . poly-noweb+r-mode)) ;; (r-modes)
-(add-to-list 'auto-mode-alist '("\\.Rnw\\" . poly-noweb+r-mode))
-(add-to-list 'auto-mode-alist '("\\.Rmd\\" . poly-markdown+r-mode))
-(add-to-list 'auto-mode-alist '("\\.rmd" . poly-markdown+r-mode))
 
 ;; ;; use rmarkdown (using polymode)
 ;; ;; Thanks to @malcook and @r2evans!
